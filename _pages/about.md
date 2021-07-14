@@ -2,23 +2,31 @@
 layout: about
 title: about
 permalink: /
-description: <a href="#">Affiliations</a>. Address. Contacts. Moto. Etc.
+===description: <a href="https://faculty.uestc.edu.cn/gushi/zh_CN/index.htm">Department of Computer Science @ UESTC</a>.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: gus-photo.jpg
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Qingshuihe Campus</p>
+    <p>Main Building B1-405</p>
+    <p>No.2006 Xiyuan Ave.</p>
+    <p>Chengdu, China</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
+I am currently a [professor](https://faculty.uestc.edu.cn/gushi/zh_CN/index.htm) in the Department of Computer Science
+and Engineering at [University of Electronic Science and Technology of China](https://www.uestc.edu.cn/). I completed
+my Ph.D degree under the supervision of [Dr. Danielle S. Bassett](https://www.seas.upenn.edu/directory/profile.php?ID=193) 
+from the [Complex System Group](https://complexsystemsupenn.com/) at the [University of Pennsylvania](https://www.upenn.edu/). 
+Before that, I spent 4 years (2007-2011) in [Tsinghua University](https://www.tsinghua.edu.cn/) for my undergraduate 
+degree in the Academic Talent Program, majoring in mathematics and physics. I am also the co-founder of [Aplux](http://www.aidlearning.net/index.html), 
+an innovative company in AIoT. 
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/){:target="\_blank"} and [Academicons](https://jpswalsh.github.io/academicons/){:target="\_blank"}, like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+### Research Interests
+ I am the director of <em><strong>Brain & Intelligence Laboratory</strong></em>, mainly focusing on the interdisciplinary fileds between computer science and neuroscience. More specifically, I am interested in the following directions:
+1. Develop new frameworks of analyzing brain connectivity with deep graph neural networks. 
+2. Develop new regime of neurofeedback via encoding system identification and control procedure desgin.
+3. Develop appropriate analytical tools for medical imaging analyses. 

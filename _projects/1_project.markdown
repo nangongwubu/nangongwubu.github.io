@@ -1,78 +1,69 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: /assets/img/12.jpg
+title: Brain Control Analysis
+description: Control Theoretic Analysis on Structural and Functional Brain Networks. 
+img: /assets/img/brain_control_cover.jpeg
 importance: 1
 category: work
 ---
-
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Cognitive function is driven by dynamic interactions between large-scale neural circuits or networks, enabling behaviour.
+However, fundamental principles constraining these dynamic network processes have remained elusive. 
+Here we use tools from control and network theories to offer a mechanistic explanation for how the brain moves between cognitive states 
+and how we can intervene the transition with predictable design.
+{% comment %}
+To give your project a background in the portfolio page
+just add the img tag to the front matter like so:
 
     ---
     layout: page
     title: project
     description: a project with a background image
     img: /assets/img/12.jpg
-    ---
+    --->
+{% endcomment %}
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/1.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/3.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
+        <img class="img-fluid rounded z-depth-0" src="{{ '/assets/img/schematic_control.png' | relative_url }}" alt="" title="example image"/>
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+    Schematics of Control Analysis on Brain Networks (Karrer et. al., 2021)
 </div>
+In network control, the system in question typically comprises a complex web of interacting components, 
+and the goal is to drive this networked system towards a desired state by influencing a select number of input nodes. 
+The starting point for most control-theoretic problems is the lineartime-invariant 
+control system $$\mathbf{x}(t + 1) = \mathbf{A}\mathbf{x}(t) + \mathbf{u}(t)$$, where $$\mathbf{x}(t)$$ defines the state of the 
+system (for example, the blood-oxygen-level-dependent signal measured by functional 
+magnetic resonance imaging), $$\mathbf{A}$$ is the interaction matrix (for example, representing 
+white matter tracts estimated using diffusion tensor imaging) and $$\mathbf{u}(t)$$ defines 
+the input signal (such as electromagnetic stimulation using transcranial magnetic 
+simulation or deep brain simulation). A system is called controllable if it can be 
+driven to any desired state. often, however, many naturally occurring networks that 
+are theoretically controllable cannot be steered to certain states owing to 
+limitations on control resources motivating the introduction of control strategies $$\mathbf{u}^*(t)$$ that 
+minimize the norm so-called control energy $$E(\mathbf{u}) = \sum_{t=0}^{\infty}|\mathbf{u}(t)|^2$$, 
+where the notation $$|·|$$ denotes the $$l^2$$-norm.
+
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
+        <a href="https://www.nature.com/articles/ncomms9414">
+        <img class="img-fluid rounded z-depth-0" src="{{ '/assets/img/control_theory.png' | relative_url}}" alt="" title="control theory"/>
+        </a>
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <a href="https://www.sciencedirect.com/science/article/pii/S1053811917300058">
+        <img class="img-fluid rounded z-depth-0" src="{{ '/assets/img/control_trajectory.jpg' | relative_url }}" alt="" title="example image"/>
+        </a>
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <a href="https://www.nature.com/articles/s42003-020-0961-x">
+        <img class="img-fluid rounded z-depth-0" src="{{ '/assets/img/control_experiment.png' | relative_url }}" alt="" title="example image"/>
+        </a>
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    The research on brain network varies from the modeling (left), the control analysis (mid), and the application to cognition (right). Click the 
+image for the corresponding papers. 
 </div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/" target="_blank">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-```
