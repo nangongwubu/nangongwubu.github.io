@@ -12,6 +12,7 @@ tags:
 - [Danielle S. Bassett's Group Website](https://complexsystemsupenn.com/)
 - [Netwiki](http://netwiki.amath.unc.edu/)
 - [Must read papers on GNN](https://github.com/thunlp/GNNPapers)
+- [Must read papers on SNN](https://github.com/Jackn0/must-read-papers-on-snn)
 - [Network DataSet](http://cnets.indiana.edu/resources/data-repository/)
 - [Academic Writing Instruction](https://www.biorxiv.org/content/early/2016/11/28/088278)
 - [How to read a paper](https://www.youtube.com/watch?v=IeaD0ZaUJ3Y)
