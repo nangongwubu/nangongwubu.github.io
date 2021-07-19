@@ -53,7 +53,7 @@ end for
 {% endhighlight %}
 
 
-#### [Layer-wise Caibration]()
+#### [Layer-wise Caibration](https://arxiv.org/abs/2106.06984)
 
 **Adaptive threshold.** We found that threshold balancing will cause a considerable flooring error, 
 especially when the simulation length is not enough, since it uses the maximum activation as the SNN's threshold. 
@@ -77,7 +77,7 @@ in each channel c. The spatial mean of conversion error can be written by:
 
 $$\mu_c (e^l) = \mu_c (x^l)-\mu_c(\bar{s}^l)$$
 
-Then we can add the expected conversion error into the bias term as $$b^l<-b^l+\mu_c(e^l)$$. 
+Then we can add the expected conversion error into the bias term as $$b^l \leftarrow b^l+\mu_c(e^l)$$. 
 
 **Potential correction (PC).** Potential is similar to bias correction. In this method we can directly 
 set $$v^l (0)$$ to $$T \times e^l$$ to calibrate the initial potential.
@@ -102,7 +102,7 @@ Surrogate gradient methods use a soft relaxed function to replace the hard step 
 There are many shapes of surrogate gradients, like rectangles, exponential, and triangles. 
 But during the training process, the surrogate gradient is always optimal? 
 
-#### [Dspike]() 
+#### [Dspike]: under review
 Here we propose a new family of Differentiable Spike (Dspike) functions that can adaptively evolve during training to 
 find the optimal shape and smoothness for gradient estimation. Mathmatically, Dspike function is like:
 
