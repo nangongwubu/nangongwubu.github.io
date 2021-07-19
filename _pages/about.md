@@ -7,12 +7,13 @@ permalink: /
 profile:
   align: right
   image: gus-photo.jpg
-  address: >
+  address: 
+    <center>
     <p>Qingshuihe Campus</p>
     <p>Main Building B1-405</p>
     <p>No.2006 Xiyuan Ave.</p>
     <p>Chengdu, China</p>
-
+    </center>
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
